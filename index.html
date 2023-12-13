@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>bingo.chrzanowski.me</title>
+    <meta name="description" content="Create Bingo Boards with Arbitrary Text Input">
+    <script src="/jspdf.min.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <h2>BINGO Card Generator</h2>
+    <p>
+    Put (at least) 24 lines of text into the "Bingo Input" area, enter the number of
+    cards you'd like to generate, and click "Create Bingo Cards". A PDF will open
+    in a new tab for you to save or download.
+    </p>
+    <form onsubmit="return false">
+        <label id="bingo_input_label">Bingo Input</label>
+        <textarea id="bingo_input" name="bingo_input" rows="20" cols="120"></textarea>
+        <br>
+        <label id="bingo_cards_label">Number of Cards</label>
+        <input id="bingo_cards" name="bingo_cards" rows="20" cols="120"></textarea>
+        <button type="submit" onclick="handleSubmit()">Create Bingo Cards</button>
+    </form>
+</body>
+</html>
